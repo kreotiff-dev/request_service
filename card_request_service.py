@@ -21,7 +21,7 @@ def validate_request(data):
 def send_approval(user_id, card_request_id, correlation_id, reply_to, card_data):
     approval_message = {
         'userId': user_id,
-        'cardRequestId': card_request_id,  # Добавляем cardRequestId в сообщение
+        'cardRequestId': card_request_id,
         'status': 'approved',
         'message': 'Your card request has been approved.'
     }
@@ -123,10 +123,10 @@ def callback(ch, method, properties, body):
 
 # Подключение к RabbitMQ
 try:
-    rabbitmq_host = os.getenv('RABBITMQ_HOST', 'localhost')  # Значение по умолчанию
-    rabbitmq_port = os.getenv('RABBITMQ_PORT', '5672')  # Значение по умолчанию
-    rabbitmq_username = os.getenv('RABBITMQ_USERNAME', 'guest')  # Значение по умолчанию
-    rabbitmq_password = os.getenv('RABBITMQ_PASSWORD', 'guest')  # Значение по умолчанию
+    rabbitmq_host = os.getenv('RABBITMQ_HOST', 'localhost')
+    rabbitmq_port = os.getenv('RABBITMQ_PORT', '5672')
+    rabbitmq_username = os.getenv('RABBITMQ_USERNAME', 'guest')
+    rabbitmq_password = os.getenv('RABBITMQ_PASSWORD', 'guest')
 
     # Преобразование порта в int
     rabbitmq_port = int(rabbitmq_port)
