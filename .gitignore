@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+.dist-info/
+*.egg
+
+# Test and coverage
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+*.pot
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pytest
+.cache
+pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# VS Code settings
+.vscode/
+
+# JetBrains IDEs
+.idea/
